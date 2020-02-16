@@ -1,0 +1,52 @@
+<html>
+
+<head>
+  <%- include('layout.ejs') %>
+</head>
+
+<body>
+  <header>
+    <h1>Star Wars Characters</h1>
+    <p>Vote for your favorites to show what you like!</p>
+  </header>
+  <main>
+
+
+    <section class="characters">
+
+      <% for(let x = 0; x < results.length; x++) { %>
+      <div class="character">
+        <header>
+
+<script id="charTemplate" type="text/x-handlebars-template">
+  <div>
+    <h2>{{<%= results[x].name %>}}</h2>
+    <span>{{<%= results[x].likes || 0 %>}}</span>
+    <button>Upvote</button>
+  </div>
+</script>
+<% } %>
+
+
+
+          <!-- <h2><%= results[x].name %></h2>
+        </header>
+        <span><%= results[x].likes || 0 %></span>
+        <button>Upvote</button>
+      </div>
+      <% } %> -->
+
+
+      <div id='separator'></div>
+      <button id='getMore'>Get More Characters</button>
+    </section>
+  </main>
+  <footer>
+    <strong>&copy; 2020 Code Fellows</strong>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+  </footer>
+  <script src="/js/app.js"></script>
+</body>
+
+</html>

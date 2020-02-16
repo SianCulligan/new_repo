@@ -1,0 +1,13 @@
+@import url(http://allfont.net/allfont.css?fonts=star-jedi);
+
+
+body > header {
+    font-family: 'Star Jedi', arial;
+    text-shadow: 4px 4px 4px #aaa;
+    background: #111;
+    box-shadow: 0px 15px 10px -15px #111;
+    color: gold;
+    line-height: 3em;
+    text-align: center;
+}
+

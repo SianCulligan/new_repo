@@ -1,0 +1,28 @@
+{
+  "name": "new_repo",
+  "version": "1.0.0",
+  "description": "Our company has completed the \"Proof of Concept\" phase of our \"Most Popular Star Wars Characters\" application. It's time to add some polish and new features to this application, and get it deployed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SianCulligan/new_repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SianCulligan/new_repo/issues"
+  },
+  "homepage": "https://github.com/SianCulligan/new_repo#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "pg": "^7.18.1",
+    "superagent": "^5.2.1"
+  }
+}
